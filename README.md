@@ -1,2 +1,2 @@
-# dbt-feature-store-tpch
-dbt feature store example with tpch
+# dbt-feature-store
+Snowflake Feature Store example that uses dbt to manage the features as part of a typical data pipeline. 
