@@ -7,9 +7,16 @@ models:
     config:
       database: DBT_FS
       schema: DBT_FS
-    
+
   - name: ft_customer_transactions
     description: transactions by customer
+    config:
+      database: DBT_FS
+      schema: DBT_FS
+      materialized: table
+
+  - name: ft_transaction_times
+    description: transaction timing features
     config:
       database: DBT_FS
       schema: DBT_FS
