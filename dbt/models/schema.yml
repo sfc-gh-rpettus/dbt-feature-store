@@ -2,14 +2,14 @@ version: 2
 
 models:
 
-  - name: stg_orders
-    description: orders table stage
+  - name: stg_transactions
+    description: transactions table stage
     config:
       database: DBT_FS
       schema: DBT_FS
     
-  - name: ft_orders
-    description: orders feature table
+  - name: ft_customer_transactions
+    description: transactions by customer
     config:
       database: DBT_FS
       schema: DBT_FS
