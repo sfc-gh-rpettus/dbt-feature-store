@@ -1,0 +1,17 @@
+version: 2
+
+models:
+
+  - name: stg_orders
+    description: orders table stage
+    config:
+      database: DBT_FS
+      schema: DBT_FS
+    
+  - name: ft_orders
+    description: orders feature table
+    config:
+      database: DBT_FS
+      schema: DBT_FS
+      materialized: table
+      tags: ['python']

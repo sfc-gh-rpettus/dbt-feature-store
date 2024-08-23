@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: feature_store_source
+    description: "feature store sources"
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: orders
+        description: "customer orders"
